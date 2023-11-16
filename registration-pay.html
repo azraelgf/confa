@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Регистрация участников</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20231116150900">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="page page_registration">
+			<section class="registration page-divider">
+				<div class="registration__header">
+					<h1 class="registration__title title">Регистрация участников</h1>
+				</div>
+				<div class="registration__container">
+					<form action="#" class="registration__form form">
+						<div class="form__row">
+							<label class="form__label" for="i_1">Фамилия (*)</label>
+							<input class="form-block__input input" id="i_1" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Фамилия">
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="i_2">Имя (*)</label>
+							<input class="form-block__input input" id="i_2" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Имя">
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="i_3">Отчество</label>
+							<input class="form-block__input input" id="i_3" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Имя">
+
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="t_1">Организация (*)</label>
+							<textarea autocomplete="off" id="t_1" name="form[]" placeholder="Наименование" data-error="Ошибка" class="input _small"></textarea>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="i_4">Страна (*)</label>
+							<input class="form-block__input input" id="i_4" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Страна">
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="i_5">Город (*)</label>
+							<input class="form-block__input input" id="i_5" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Город">
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="i_6">Индекс (*)</label>
+							<input class="form-block__input input" id="i_6" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Индекс">
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="i_7">Адрес (*)</label>
+							<input class="form-block__input input" id="i_7" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Адрес">
+						</div>
+						<div class="form__row">
+							<div class="form__text">
+								Пожалуйста, отметьте, если Вы являетесь молодым ученым (до 35 лет включительно по состоянию
+								на 31.12.2022) (*)
+							</div>
+							<div class="checkbox-items">
+								<div class="checkbox">
+									<input id="q1_1" data-error="Ошибка" class="checkbox__input" type="radio" value="1" name="question1">
+									<label for="q1_1" class="checkbox__label">
+										<span class="checkbox__text">являюсь</span>
+									</label>
+								</div>
+								<div class="checkbox">
+									<input id="q1_2" data-error="Ошибка" class="checkbox__input" type="radio" value="1" name="question1">
+									<label for="q1_2" class="checkbox__label">
+										<span class="checkbox__text">не являюсь</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="i_8">E-mail (*)</label>
+							<input class="form-block__input input" id="i_8" autocomplete="off" type="email" name="form[]" data-error="Ошибка" placeholder="E-mail">
+						</div>
+						<div class="form__row">
+							<div class="checkbox">
+								<input id="q2_1" data-error="Ошибка" checked class="checkbox__input" type="radio" value="1" name="agree">
+								<label for="q2_1" class="checkbox__label">
+									<span class="checkbox__text">Я соглашаюсь на обработку персональных данных</span>
+								</label>
+							</div>
+
+						</div>
+						<div class="form__row">
+							<button class="form__button button button_primary" type="submit">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+	</div>
+	<script src="js/app.min.js?_v=20231116150900"></script>
+</body>
+
+</html>

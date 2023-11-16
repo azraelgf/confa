@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Форма регистрации участника</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20231116150900">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="page page_registration">
+			<section class="registration page-divider">
+				<div class="registration__header">
+					<h1 class="registration__title title">Форма приема аннотаций</h1>
+				</div>
+				<div class="registration__container">
+					<form action="#" class="registration__form form">
+						<div class="form__row">
+							<label class="form__label" for="s_1">Секция</label>
+							<select name="form[]" id="s_1" data-scroll="500" data-class-modif="form">
+								<option value="1" selected>Секция1</option>
+								<option value="2">Секция2</option>
+								<option value="3">Секция3</option>
+								<option value="4">Секция4</option>
+								<option value="5">Секция5</option>
+							</select>
+							<div class="checkbox _button">
+								<input id="c_0" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="section-empty">
+								<label for="c_0" class="checkbox__label">
+									<span class="checkbox__text">Без секции</span>
+								</label>
+							</div>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="i_1">Название доклада (RU)</label>
+							<div class="form-block">
+								<input class="form-block__input input" id="i_1" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Название">
+								<button class="form-block__btn _icon-close" type="button"></button>
+							</div>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="i_2">Название доклада (EN)</label>
+							<div class="form-block">
+								<input class="form-block__input input" id="i_2" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Название">
+								<button class="form-block__btn _icon-close" type="button"></button>
+							</div>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="s_2">Перечень авторов</label>
+							<select name="form[]" id="s_2" data-scroll="500" data-class-modif="form">
+								<option value="1" selected>Автор1</option>
+								<option value="2">Автор2</option>
+								<option value="3">Автор3</option>
+								<option value="4">Автор4</option>
+								<option value="5">Автор5</option>
+							</select>
+
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="t_1">Аннотация (RU)</label>
+							<textarea autocomplete="off" id="t_1" name="form[]" placeholder="Аннотация" data-error="Ошибка" class="input _small"></textarea>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="t_2">Аннотация (EN)</label>
+							<textarea autocomplete="off" id="t_2" name="form[]" placeholder="Аннотация" data-error="Ошибка" class="input _small"></textarea>
+						</div>
+						<div class="form__row">
+							<div class="input__wrapper">
+								<input name="file" type="file" id="input__file" class="input input__file" multiple>
+								<label for="input__file" class="input__file-button ">
+									<span class="input__file-button-text button">Загрузить изображение или документ</span>
+									<span class="input__file-icon-wrapper"><img class="input__file-icon" src="img/down.svg" alt="Выбрать файл" width="25"></span>
+								</label>
+							</div>
+							<div class="checkbox">
+								<input id="c_" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+								<label for="c_" class="checkbox__label">
+									<span class="checkbox__text">Максимальный размер файла</span>
+								</label>
+							</div>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="t_3">Ключевые слова в аннотации</label>
+							<textarea autocomplete="off" id="t_3" name="form[]" placeholder="////, ////, ////, ////," data-error="Ошибка" class="input _smaller"></textarea>
+						</div>
+						<div class="form__row _two">
+							<div class="form__line">
+								<label class="form__label" for="date-start">Дата начала регистрации</label>
+								<input class="input" autocomplete="off" id="date-start" type="date" name="form[]" data-error="Ошибка" placeholder="__.__.____">
+							</div>
+							<div class="form__line">
+								<label class="form__label" for="date-start">Дата окончания регистрации</label>
+								<input class="input" autocomplete="off" id="date-end" type="date" name="form[]" data-error="Ошибка" placeholder="__.__.____">
+							</div>
+						</div>
+						<div class="form__row">
+							<div class="form-list">
+								<div class="form-list__item">
+									<label class="form__label" for="c_1">Может ли участник изменить содержание формы заявки/доклада?</label>
+									<div class="checkbox-items">
+										<div class="checkbox">
+											<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="question1">
+											<label for="c_1" class="checkbox__label">
+												<span class="checkbox__text">Секции</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="question1">
+											<label for="c_2" class="checkbox__label">
+												<span class="checkbox__text">Названия</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="question1">
+											<label for="c_3" class="checkbox__label">
+												<span class="checkbox__text">Автора</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="question1">
+											<label for="c_4" class="checkbox__label">
+												<span class="checkbox__text">Текста аннотации</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-list__item">
+									<label class="form__label" for="q1_1">Необходимо ли формировать коллекцию докладов?</label>
+									<div class="checkbox-items">
+										<div class="checkbox">
+											<input id="q1_1" data-error="Ошибка" class="checkbox__input" type="radio" value="1" name="question2">
+											<label for="q1_1" class="checkbox__label">
+												<span class="checkbox__text">Да</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<input id="q1_2" data-error="Ошибка" class="checkbox__input" type="radio" value="1" name="question2">
+											<label for="q1_2" class="checkbox__label">
+												<span class="checkbox__text">Нет</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-list__item">
+									<label class="form__label" for="q2_1">Необходимо ли формировать коллекцию докладов?</label>
+									<div class="checkbox-items">
+										<div class="checkbox">
+											<input id="q2_1" data-error="Ошибка" class="checkbox__input" type="radio" value="1" name="question3">
+											<label for="q2_1" class="checkbox__label">
+												<span class="checkbox__text">Да</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<input id="q2_2" data-error="Ошибка" class="checkbox__input" type="radio" value="1" name="question3">
+											<label for="q2_2" class="checkbox__label">
+												<span class="checkbox__text">Нет</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-list__item">
+									<label class="form__label" for="q3_1">Необходимо ли генерировать программу?</label>
+									<div class="checkbox-items">
+										<div class="checkbox">
+											<input id="q3_1" data-error="Ошибка" class="checkbox__input" type="radio" value="1" name="question4">
+											<label for="q3_1" class="checkbox__label">
+												<span class="checkbox__text">Да</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<input id="q3_2" data-error="Ошибка" class="checkbox__input" type="radio" value="1" name="question4">
+											<label for="q3_2" class="checkbox__label">
+												<span class="checkbox__text">Нет</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-list__item">
+									<label class="form__label" for="q4_1">Нужно ли загружать файл презентации/плаката?</label>
+									<div class="checkbox-items">
+										<div class="checkbox">
+											<input id="q4_1" data-error="Ошибка" class="checkbox__input" type="radio" value="1" name="question5">
+											<label for="q4_1" class="checkbox__label">
+												<span class="checkbox__text">Да</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<input id="q4_2" data-error="Ошибка" class="checkbox__input" type="radio" value="1" name="question5">
+											<label for="q4_2" class="checkbox__label">
+												<span class="checkbox__text">Нет</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-list__item">
+									<label class="form__label" for="q5_1">Необходимо ли проверять и подтверждать принятие диссертации в ручном режиме?</label>
+									<div class="checkbox-items">
+										<div class="checkbox">
+											<input id="q5_1" data-error="Ошибка" class="checkbox__input" type="radio" value="1" name="question6">
+											<label for="q5_1" class="checkbox__label">
+												<span class="checkbox__text">Да</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<input id="q5_2" data-error="Ошибка" class="checkbox__input" type="radio" value="1" name="question6">
+											<label for="q5_2" class="checkbox__label">
+												<span class="checkbox__text">Нет</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form__row">
+							<button class="form__button button button_primary" type="submit">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+	</div>
+	<script src="js/app.min.js?_v=20231116150900"></script>
+</body>
+
+</html>

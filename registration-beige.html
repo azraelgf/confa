@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Генерация бейджей для участников</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20231116150900">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="page page_registration">
+			<section class="registration page-divider">
+				<div class="registration__header">
+					<h1 class="registration__title title">Генерация бейджей для участников</h1>
+				</div>
+				<div class="registration__container">
+					<form action="#" class="registration__form form">
+						<div class="form__row">
+							<label class="form__label" for="i_1">Полное имя(*)</label>
+							<div class="form__line">
+								<input class="form-block__input input" id="i_1" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Полное имя">
+							</div>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="i_2">Статус</label>
+							<div class="form__line">
+								<input class="form-block__input input" id="i_2" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Статус">
+							</div>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="i_3">Аффилиации (*)</label>
+							<div class="form__line">
+								<input class="form-block__input input" id="i_3" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Аффилиации">
+							</div>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="i_4">Страна</label>
+							<div class="form__line">
+								<input class="form-block__input input" id="i_4" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Страна">
+							</div>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="s_1">Язык (*)</label>
+							<select name="form[]" id="s_1" data-scroll="500" data-class-modif="form">
+								<option value="1" selected>Русский</option>
+								<option value="2">Английский</option>
+							</select>
+						</div>
+						<div class="form__row _two _grid-center">
+							<div class="file" data-file>
+								<div class="file__item">
+									<div id="formPreview" class="file__preview"></div>
+									<input id="formImage" accept=".ai, .png, .svg,.eps" type="file" name="image" class="file__input">
+									<div class="file__button button">Добавить лого</div>
+								</div>
+							</div>
+							<div class="form__text">
+								Пожалуйста, укажите логотип в векторе (ai, svg, eps) или в формате png.
+							</div>
+						</div>
+						<div class="form__row">
+							<div class="form-list">
+								<div class="form-list__item">
+									<label class="form__label" for="c_1">Выбрать формат</label>
+									<div class="checkbox-items">
+										<div class="checkbox">
+											<input id="c_1" data-error="Ошибка" class="checkbox__input" type="radio" value="1" name="format">
+											<label for="c_1" class="checkbox__label">
+												<span class="checkbox__text">A5</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<input id="c_2" data-error="Ошибка" class="checkbox__input" type="radio" value="1" name="format">
+											<label for="c_2" class="checkbox__label">
+												<span class="checkbox__text">A6</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<input id="c_3" data-error="Ошибка" class="checkbox__input" type="radio" value="1" name="format">
+											<label for="c_3" class="checkbox__label">
+												<span class="checkbox__text">A7</span>
+											</label>
+										</div>
+									</div>
+									<a class="button" href="">Сгенерировать QR код</a>
+								</div>
+								<div class="form-list__item">
+									<label class="form__label" for="c_4">Выбрать дизайн</label>
+									<div class="checkbox-items">
+										<div class="checkbox _img">
+											<input id="c_4" data-error="Ошибка" class="checkbox__input" type="radio" value="1" name="design">
+											<label for="c_4" class="checkbox__label">
+												<img src="img/design/01.jpg" alt="Image">
+												<span class="checkbox__text">1</span>
+											</label>
+										</div>
+										<div class="checkbox _img">
+											<input id="c_5" data-error="Ошибка" class="checkbox__input" type="radio" value="1" name="design">
+											<label for="c_5" class="checkbox__label">
+												<img src="img/design/02.jpg" alt="Image">
+												<span class="checkbox__text">2</span>
+											</label>
+										</div>
+										<div class="checkbox _img">
+											<input id="c_6" data-error="Ошибка" class="checkbox__input" type="radio" value="1" name="design">
+											<label for="c_6" class="checkbox__label">
+												<img src="img/design/03.jpg" alt="Image">
+												<span class="checkbox__text">3</span>
+											</label>
+										</div>
+										<div class="checkbox _img">
+											<input id="c_7" data-error="Ошибка" class="checkbox__input" type="radio" value="1" name="design">
+											<label for="c_7" class="checkbox__label">
+												<span class="checkbox__text">Сгенерировать все</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form__row">
+							<div class="form__btns">
+								<button class="form__button button" type="button">Предварительно</button>
+								<button class="form__button button" type="button">Сохранить</button>
+							</div>
+							<button class="form__button button button_primary" type="submit">Генерировать и оплатить</button>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+	</div>
+	<script src="js/app.min.js?_v=20231116150900"></script>
+</body>
+
+</html>

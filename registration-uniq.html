@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Регистрационная форма</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20231116150900">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="page page_registration">
+			<section class="registration page-divider">
+				<div class="registration__header">
+					<h1 class="registration__title title">Регистрационная форма</h1>
+				</div>
+				<div class="registration__container">
+					<form action="#" class="registration__form form">
+						<div class="form__row">
+							<label class="form__label" for="s_1">Тип события (*)</label>
+							<select name="form[]" id="s_1" data-scroll="500" data-class-modif="form">
+								<option value="1" selected>Конференция</option>
+								<option value="2">Семинар</option>
+								<option value="3">Школа-семинар</option>
+								<option value="4">Мастер-класс</option>
+								<option value="5">Презентация</option>
+								<option value="6">Выставка</option>
+							</select>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="s_2">Формат (*)</label>
+							<select name="form[]" id="s_2" data-scroll="500" data-class-modif="form">
+								<option value="1" selected>Русский/национальный</option>
+								<option value="2">Международное мероприятие</option>
+								<option value="3">Привлеченные иностранцы</option>
+							</select>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="i_1">Полное название события (RU)</label>
+							<div class="form__line">
+								<input class="input" id="i_1" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Полное название">
+							</div>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="i_2">Полное название события (EN)</label>
+							<div class="form__line">
+								<input class="input" id="i_2" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Полное название">
+							</div>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="i_3">Аббревиатура (RU)</label>
+							<div class="form__line">
+								<input class="input" id="i_3" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Сокращённое название">
+							</div>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="i_4">Аббревиатура (EN)</label>
+							<div class="form__line">
+								<input class="input" id="i_4" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Сокращённое название">
+							</div>
+						</div>
+
+						<div class="form__row _one">
+							<label class="form__label" for="s_3">Тема мероприятия (*)</label>
+							<select name="form[]" id="s_3" data-scroll="500" multiple data-class-modif="multiple-form">
+								<option value="1" selected>Тема1</option>
+								<option value="2">Тема2</option>
+								<option value="3">Тема3</option>
+								<option value="4">Тема4</option>
+								<option value="5">Тема5</option>
+								<option value="6">Тема6</option>
+								<option value="7">Длинное название темы</option>
+								<option value="8">Длинное название темы2</option>
+							</select>
+							<div class="form-block">
+								<input class="form-block__input input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Тема234">
+								<button class="form-block__btn _icon-close" type="button"></button>
+							</div>
+							<button class="button" type="button">Добавить еще</button>
+
+						</div>
+
+						<div class="form__row">
+							<div class="file" data-file>
+								<div class="file__item">
+									<div id="formPreview" class="file__preview"></div>
+									<input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file__input">
+									<div class="file__button button">Добавить лого</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form__row _one">
+							<label class="form__label" for="i_5">Сайт</label>
+							<div class="form__line">
+								<input class="input" id="i_5" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="website.com">
+							</div>
+							<a href="" class="button">Сгенерировать сайт</a>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="i_6">Название доклада (RU)</label>
+							<div class="form-block">
+								<input class="form-block__input input" id="i_6" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Организация">
+								<button class="form-block__btn _icon-close" type="button"></button>
+							</div>
+							<div class="form-block">
+								<input class="form-block__input input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Организация">
+								<button class="form-block__btn _icon-close" type="button"></button>
+							</div>
+							<div class="form-block">
+								<input class="form-block__input input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Организация">
+								<button class="form-block__btn _icon-close" type="button"></button>
+							</div>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="t_1">Адрес (*)</label>
+							<textarea autocomplete="off" id="t_1" name="form[]" placeholder="Адрес" data-error="Ошибка" class="input _smaller"></textarea>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="i_7">Номер телефона службы поддержки мероприятия (*)</label>
+							<div class="form__line">
+								<input class="input" id="i_7" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Телефон">
+							</div>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="i_8">E-mail службы поддержки мероприятия (*)</label>
+							<div class="form__line">
+								<input class="input" id="i_8" autocomplete="off" type="email" name="form[]" data-error="Ошибка" placeholder="E-mail">
+							</div>
+						</div>
+						<div class="form__row _two">
+							<div class="form__line">
+								<label class="form__label" for="date-start">Дата начала</label>
+								<input class="input" autocomplete="off" id="date-start" type="date" name="form[]" data-error="Ошибка" placeholder="__.__.____">
+							</div>
+							<div class="form__line">
+								<label class="form__label" for="date-start">Дата окончания</label>
+								<input class="input" autocomplete="off" id="date-end" type="date" name="form[]" data-error="Ошибка" placeholder="__.__.____">
+							</div>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="t_2">Описание мероприятия (RU)</label>
+							<textarea autocomplete="off" id="t_2" name="form[]" placeholder="Описание мероприятия" data-error="Ошибка" class="input _small"></textarea>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="t_3">Описание мероприятия (EN)</label>
+							<textarea autocomplete="off" id="t_3" name="form[]" placeholder="Описание мероприятия" data-error="Ошибка" class="input _small"></textarea>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="s_4">Язык события (*)</label>
+							<select name="form[]" id="s_4" data-scroll="500" data-class-modif="form">
+								<option value="1" selected>Русский</option>
+								<option value="2">Английский</option>
+								<option value="3">Русский или Английский</option>
+								<option value="4">Другой</option>
+							</select>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="s_5">Язык сайта (*)</label>
+							<select name="form[]" id="s_5" data-scroll="500" data-class-modif="form">
+								<option value="1" selected>Русский</option>
+								<option value="2">Английский</option>
+								<option value="3">Русский или Английский</option>
+							</select>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="i_9">Номер секции (*)</label>
+							<div class="form__line">
+								<input class="input" id="i_9" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Номер секции ">
+							</div>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="i_10">Название секции (RU)(*)</label>
+							<div class="form__line">
+								<input class="input" id="i_10" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Название секции">
+							</div>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="i_11">Название секции (EN)(*)</label>
+							<div class="form__line">
+								<input class="input" id="i_11" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Название секции">
+							</div>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="i_12">Обозначение секции (*)</label>
+							<div class="form__line">
+								<input class="input" id="i_12" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Условное обозначение секции">
+							</div>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="i_13">Модератор секции (*)</label>
+							<div class="form-block">
+								<input class="form-block__input input" id="i_13" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="/////@gmail.com">
+								<button class="form-block__btn _icon-close" type="button"></button>
+							</div>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="s_6">Количество участников (*)</label>
+							<select name="form[]" id="s_6" data-scroll="500" data-class-modif="form">
+								<option value="1" selected>до 50</option>
+								<option value="2">50-100</option>
+								<option value="3">100-150</option>
+								<option value="4">150-200</option>
+								<option value="5">200+</option>
+							</select>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="s_7">Формы отчетов (*)</label>
+							<select name="form[]" id="s_7" data-scroll="500" data-class-modif="form">
+								<option value="1" selected>Устно</option>
+								<option value="2">Письменно</option>
+								<option value="3">Микс</option>
+							</select>
+						</div>
+						<div class="form__row">
+							<div class="form-list">
+								<div class="form-list__item">
+									<label class="form__label" for="c_1">Оплата участников (вступительные взносы)</label>
+									<div class="checkbox-items">
+										<div class="checkbox">
+											<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="question1">
+											<label for="c_1" class="checkbox__label">
+												<span class="checkbox__text">Введите сумму</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-list__item">
+									<label class="form__label" for="q1_1">Плата за посещение</label>
+									<div class="checkbox-items">
+										<div class="checkbox">
+											<input id="q1_1" data-error="Ошибка" class="checkbox__input" type="radio" value="1" name="question2">
+											<label for="q1_1" class="checkbox__label">
+												<span class="checkbox__text">Введите сумму</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-list__item">
+									<label class="form__label" for="q2_1">Скидка для определенных групп населения</label>
+									<div class="checkbox-items">
+										<div class="checkbox">
+											<input id="q2_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="question3">
+											<label for="q2_1" class="checkbox__label">
+												<span class="checkbox__text">Укажите цену со скидкой</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<input id="q2_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="question3">
+											<label for="q2_2" class="checkbox__label">
+												<span class="checkbox__text">Студент</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<input id="q2_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="question3">
+											<label for="q2_3" class="checkbox__label">
+												<span class="checkbox__text">Первый автор (докладчик)</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<input id="q2_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="question3">
+											<label for="q2_4" class="checkbox__label">
+												<span class="checkbox__text">Специальный гость назначается администратором по электронной почте</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-list__item">
+									<label class="form__label" for="q3_1">Бесплатное посещение для определенных групп населения</label>
+									<div class="checkbox-items">
+										<div class="checkbox">
+											<input id="q3_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="question3">
+											<label for="q3_1" class="checkbox__label">
+												<span class="checkbox__text">Студент</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<input id="q3_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="question3">
+											<label for="q3_2" class="checkbox__label">
+												<span class="checkbox__text">Первый автор (докладчик)</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<input id="q3_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="question3">
+											<label for="q3_4" class="checkbox__label">
+												<span class="checkbox__text">Специальный гость назначается администратором по электронной почте</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-list__item">
+									<label class="form__label" for="q4_1">Оплата тезисов от участников</label>
+									<div class="checkbox-items">
+										<div class="checkbox">
+											<input id="q4_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="question5">
+											<label for="q4_1" class="checkbox__label">
+												<span class="checkbox__text">Введите сумму для одного доклада</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-list__item">
+									<label class="form__label" for="q5_1">Выберите то, что необходимо для проведения конференции (*)</label>
+									<div class="checkbox-items _one">
+										<div class="checkbox">
+											<input id="q5_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="question6">
+											<label for="q5_1" class="checkbox__label">
+												<span class="checkbox__text">Программа мероприятия</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<input id="q5_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="question6">
+											<label for="q5_2" class="checkbox__label">
+												<span class="checkbox__text">Форма приема тезисов</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<input id="q5_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="question6">
+											<label for="q5_3" class="checkbox__label">
+												<span class="checkbox__text">Формирование коллекции Аннотация</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<input id="q5_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="question6">
+											<label for="q5_4" class="checkbox__label">
+												<span class="checkbox__text">Генерация бейджей для участников</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<input id="q5_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="question6">
+											<label for="q5_5" class="checkbox__label">
+												<span class="checkbox__text">Сайт с хостингом и конструктором контента</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<input id="q5_6" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="question6">
+											<label for="q5_6" class="checkbox__label">
+												<span class="checkbox__text">Платежный сервис</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<input id="q5_7" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="question6">
+											<label for="q5_7" class="checkbox__label">
+												<span class="checkbox__text">Сервис по оплате комиссионных сборов</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<input id="q5_8" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="question6">
+											<label for="q5_8" class="checkbox__label">
+												<span class="checkbox__text">Отсрочка уплаты организационных взносов (укажите дату)</span>
+											</label>
+										</div>
+										<div class="checkbox">
+											<input id="q5_9" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="question6">
+											<label for="q5_9" class="checkbox__label">
+												<span class="checkbox__text">Отложенный абстрактный платеж (укажите дату)</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form__row">
+							<button class="form__button button button_primary" type="submit">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+	</div>
+	<script src="js/app.min.js?_v=20231116150900"></script>
+</body>
+
+</html>

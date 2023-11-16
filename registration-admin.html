@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Регистрационная форма</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20231116150900">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="page page_registration">
+			<section class="registration page-divider">
+				<div class="registration__header">
+					<h1 class="registration__title title">Регистрационная форма</h1>
+				</div>
+				<div class="registration__container">
+					<form action="#" class="registration__form form">
+						<div class="form__row _one">
+							<label class="form__label" for="i_1">Тип события (*)</label>
+							<div class="form__line">
+
+								<input class="input" id="i_1" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Полный">
+							</div>
+							<div class="form__line">
+								<input class="input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Аббревиатура">
+							</div>
+
+
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="i_2">Сайт</label>
+							<div class="form__line">
+								<input class="input" id="i_2" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="website.com">
+							</div>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="i_3">Идентификационный номер налогоплательщика</label>
+							<div class="form__line">
+								<input class="input" id="i_3" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="ИНН">
+							</div>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="t_1">Адрес (*)</label>
+							<textarea autocomplete="off" id="t_1" name="form[]" placeholder="Адрес" data-error="Ошибка" class="input _smaller"></textarea>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="i_4">Телефон (*)</label>
+							<div class="form__line">
+								<input class="input" id="i_4" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Телефон">
+							</div>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="i_5">Мессенджер</label>
+							<div class="form__line">
+								<input class="input" id="i_5" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Мессенджер">
+							</div>
+						</div>
+						<div class="form__row">
+							<label class="form__label" for="s_1">Тип организации</label>
+							<select name="form[]" id="s_1" data-scroll="500" data-class-modif="form">
+								<option value="1" selected>Университет</option>
+								<option value="2">Институт</option>
+								<option value="3">Научно-исследовательский институт</option>
+								<option value="4">Некоммерческая организация</option>
+								<option value="5">Коммерческая организация</option>
+							</select>
+							<div class="checkbox _button">
+								<input id="c_0" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="section-empty">
+								<label for="c_0" class="checkbox__label">
+									<span class="checkbox__text">Иное</span>
+								</label>
+							</div>
+						</div>
+						<div class="form__row _one">
+							<label class="form__label" for="s_2">Деятельность (*)</label>
+							<select name="form[]" id="s_2" data-scroll="500" data-class-modif="form">
+								<option value="1" selected>Наука</option>
+								<option value="2">Обучение</option>
+								<option value="3">Коммерческая деятельность</option>
+							</select>
+							<div class="form-block">
+								<input class="form-block__input input" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Наука">
+								<button class="form-block__btn _icon-close" type="button"></button>
+							</div>
+							<div class="form__btns">
+								<button class="button" type="button">Иное</button>
+								<button class="button" type="button">Добавить деятельность</button>
+							</div>
+						</div>
+						<div class="form__row">
+							<div class="file" data-file>
+								<div class="file__item">
+									<div id="formPreview" class="file__preview"></div>
+									<input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file__input">
+									<div class="file__button button">Добавить лого</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form__row">
+							<label class="form__label" for="i_6">Социальные сети</label>
+							<div class="form__line">
+								<input class="input" id="i_6" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Социальные сети">
+							</div>
+						</div>
+						<div class="form__row">
+							<button class="form__button button button_primary" type="submit">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+	</div>
+	<script src="js/app.min.js?_v=20231116150900"></script>
+</body>
+
+</html>
